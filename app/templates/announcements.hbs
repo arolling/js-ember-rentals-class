@@ -1,0 +1,10 @@
+{{outlet}}
+
+<h2>All Current Announcements</h2>
+{{#each model as |announcement|}}
+  {{announcement-tile announcement=announcement }}
+{{/each}}
+<br>
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+{{#link-to 'index'}}Go Home{{/link-to}}
