@@ -1,4 +1,5 @@
 <h4>{{announcement.topic}}</h4>
 <p>{{announcement.description}}</p>
-
+<button {{action 'delete' announcement}} class="btn-danger">Delete</button>
+<hr>
 {{yield}}
